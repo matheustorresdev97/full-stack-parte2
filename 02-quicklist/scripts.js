@@ -40,6 +40,20 @@ removeButton.forEach((selected_element) => {
 
 function deleteEvent(element) {
   element.addEventListener("click", (event) => {
-    event.target.closest("li.item").remove();
+    const warningBox = document.getElementById("warning-wrapper");
+    const warningMessagem = warningBox.querySelector("p");
+    const removedItem = event.target.closest("li.item");
+    const closeIcon = document.getElementById("close-icon");
+
+    warningMessagem.querySelector("span.removed").textContent =
+      removedItem.querySelector("span").textContent;
+
+    warningBox.classList.remove("hidden");
+
+    removedItem.remove();
+
+    closeIcon.addEventListener("click", () => {
+      warningBox.classList.add("hidden");
+    });
   });
 }
