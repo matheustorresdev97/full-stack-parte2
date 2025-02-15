@@ -5,7 +5,7 @@ const itemList = document.getElementById("items-list");
 const item = document.getElementsByClassName("item");
 const checkbox = document.querySelector('input[type="checkbox"]');
 const itemName = document.querySelector("span");
-const removeButton = document.querySelector("li > svg");
+const removeButton = document.querySelectorAll("li.item > svg");
 
 form.onsubmit = (event) => {
   event.preventDefault();
@@ -17,7 +17,7 @@ form.onsubmit = (event) => {
 
 function addItem(name) {
   const newItem = document.createElement("li");
-  newItem.setAttribute("class", "item");
+  newItem.classList.add("item");
 
   const new_checkbox = document.createElement("input");
   new_checkbox.setAttribute("type", "checkbox");
@@ -30,4 +30,16 @@ function addItem(name) {
   newRemoveImg.setAttribute("alt", "Ícone de lata de lixo");
   newItem.append(newRemoveImg);
   itemList.prepend(newItem);
+
+  deleteEvent(newRemoveImg);
+}
+
+removeButton.forEach((selected_element) => {
+  deleteEvent(selected_element);
+});
+
+function deleteEvent(element) {
+  element.addEventListener("click", (event) => {
+    event.target.closest("li.item").remove();
+  });
 }
