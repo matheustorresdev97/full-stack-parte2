@@ -6,12 +6,29 @@ const item = document.getElementsByClassName("item");
 const checkbox = document.querySelector('input[type="checkbox"]');
 const itemName = document.querySelector("span");
 const removeButton = document.querySelectorAll("li.item > svg");
+const error = document.querySelector("div.add-item > p");
 
 form.onsubmit = (event) => {
   event.preventDefault();
 
-  addItem(newItem.value);
+  if (newItem.value == "") {
+    newItem.classList.add("error-border");
+    error.classList.remove("hidden");
 
+    button.blur();
+
+    newItem.addEventListener("keypress", () => {
+      newItem.classList.remove("error-border");
+      error.classList.add("hidden");
+    });
+    return;
+  } else {
+    newItem.classList.remove("error-border");
+    error.classList.add("hidden");
+  }
+
+  addItem(newItem.value);
+  newItem.value = "";
   button.blur();
 };
 
