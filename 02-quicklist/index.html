@@ -1,16 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quicklist</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles/index.css" />
-  </head>
-  <body></body>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="img/logo.png" alt="Logomarca do Quicklist">
+        </header>
+
+        <a href="#" class="back-button"><- Voltar</a>
+
+        <h1>Compras da semana</h1>
+
+        <form action="">
+            <div class="add-item">
+                <input type="text" name="new-item" id="new-item" placeholder="Adicione um novo item">
+
+                <button type="submit">Adicionar item</button>
+            </div>
+
+            <ul role="list" id="items-list">
+                <li class="item">
+                    <input type="checkbox" name="" id="">
+
+                    <span>Pão de forma</span>
+
+                    <img src="img/trash-bin.svg" alt="Ícone de lata de lixo">
+                </li>
+                <li class="item">
+                    <input type="checkbox" name="" id="">
+
+                    <span>Café preto</span>
+
+                    <img src="img/trash-bin.svg" alt="Ícone de lata de lixo">
+                </li>
+                <li class="item">
+                    <input type="checkbox" name="" id="">
+
+                    <span>Suco de laranja</span>
+
+                    <img src="img/trash-bin.svg" alt="Ícone de lata de lixo">
+                </li>
+                <li class="item">
+                    <input type="checkbox" name="" id="">
+
+                    <span>Bolacha</span>
+
+                    <img src="img/trash-bin.svg" alt="Ícone de lata de lixo">
+                </li>
+            </ul>
+        </form>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
 </html>

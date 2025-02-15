@@ -1,0 +1,39 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 22.5rem;
+    max-width: 24.375rem;
+
+    margin-inline: auto;
+
+    & header {
+        display: none;
+    }
+
+    & .back-button {
+        display: inline-block;
+
+        font: var(--link);
+        color: var(--color-brand);
+
+        margin-top: 4.875rem;
+        margin-left: 2rem;
+
+        transition: color 150ms ease;
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+            color: var(--color-brand-hover);
+            outline: none;
+        }
+    }
+
+    & h1 {
+        font: var(--title);
+        width: fit-content;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+}
