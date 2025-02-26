@@ -16,10 +16,10 @@
     <main>
       <header class="container">
         <div>
-          <h1 class="title">Sua agenda</h1>
+          <h1 class="title">Your schedule</h1>
           <span class="pg-md"
-            >Aqui você pode ver todos os clientes e serviços agendados para
-            hoje.</span
+            >Here you can see all the clients and services scheduled for today.
+          </span>
           >
         </div>
         <div>
@@ -28,6 +28,55 @@
           <div><input type="date" name="date" id="date" /></div>
         </div>
       </header>
+      <section class="morning container">
+        <header>
+          <div>
+            <img src="/Morning.svg" alt="morning period icon" />
+            <span class="label-lg content-primary">Morning</span>
+          </div>
+          <span class="label-lg">09h-12h</span>
+        </header>
+        <ul>
+          <li>
+            <span class="label-md content-primary">09:00</span>
+            <span class="pg-md"
+              ><strong class="label-md content-primary">Bella</strong> / Pedro
+              Martins</span
+            >
+            <span class="pg-md">Aplicação de Anti-pulgas</span>
+            <span class="remove pg-md content-tertiary">Remove schedule</span>
+          </li>
+          <li>
+            <span class="label-md content-primary">10:00</span>
+            <span class="pg-md"
+              ><strong class="label-md content-primary">Mel</strong> / João
+              Souza</span
+            >
+            <span class="pg-md">Corte de Unhas</span>
+            <span class="remove pg-md content-tertiary">Remove schedule</span>
+          </li>
+        </ul>
+      </section>
+      <section class="afternoon container">
+        <header>
+          <div>
+            <img src="/Afternoon.svg" alt="afternoon period icon" />
+            <span class="label-lg content-primary">Morning</span>
+          </div>
+          <span class="label-lg">13h-17h</span>
+        </header>
+        <ul></ul>
+      </section>
+      <section class="evening container">
+        <header>
+          <div>
+            <img src="/Evening.svg" alt="evening period icon" />
+            <span class="label-lg content-primary">Evening</span>
+          </div>
+          <span class="label-lg">18h-21h</span>
+        </header>
+        <ul></ul>
+      </section>
     </main>
     <script type="module" src="src/main.js"></script>
   </body>

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  box-sizing: border-box;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -48,14 +49,11 @@
 }
 
 body {
+  background-color: var(--bg-primary);
   font-weight: var(--fw-base);
   font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.5;
   color: #98959d;
-}
-
-main {
-  width: 100%;
-  height: 100%;
+  color: var(--content-secondary);
 }

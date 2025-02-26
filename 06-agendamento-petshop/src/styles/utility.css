@@ -3,7 +3,32 @@
     color: #f5f4f5;
 }
 
+.pg-sm {
+    font: var(--pg-sm);
+    color: var(--content-secondary);
+}
+
 .pg-md {
     font: var(--pg-md);
-    color: #98959d;
+    color: var(--content-secondary);
+}
+
+.label-sm {
+    font: var(--label-sm);
+}
+
+.label-md {
+    font: var(--label-md);
+}
+
+.label-lg {
+    font: var(--label-lg);
+}
+
+.content-primary {
+    color: var(--content-primary);
+}
+
+.content-tertiary {
+    color: var(--content-tertiary);
 }
