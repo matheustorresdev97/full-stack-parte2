@@ -28,6 +28,16 @@ aside {
     }
 }
 
+#remove {
+    width: calc(13rem/16);
+    height: calc(13rem/16);
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    background-image: url(/Remove.svg);
+    object-fit: contain;
+}
+
 @media (width >=80em) {
     aside {
         margin-inline: auto;

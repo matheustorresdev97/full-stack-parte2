@@ -2,7 +2,6 @@ main>header {
     display: grid;
     gap: calc(12rem/16);
     padding-top: calc(70rem/16);
-    border: 1px solid;
 
     & div:has(>input) {
         display: block;
@@ -14,7 +13,7 @@ main>header {
             inset: 0;
         }
 
-        background-image: url(../assets/Icon.svg);
+        background-image: url(/Icon.svg);
         object-fit: contain;
         width: calc(20rem/16);
         height: calc(20rem/16);
@@ -41,6 +40,14 @@ main>header {
             display: inline-block;
             width: 6.5rem;
             height: 1.5rem;
+        }
+
+        &:hover {
+            border-color: var(--border-secondary);
+        }
+
+        &:has(:focus-within) {
+            border-color: var(--border-brand);
         }
     }
 }

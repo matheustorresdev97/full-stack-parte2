@@ -40,3 +40,18 @@
 .hidden {
     display: none;
 }
+
+.main-size {
+    height: 65rem;
+}
+
+@media (width >=80em) {
+    .main-size {
+        height: 52rem;
+    }
+
+    .mobile-only {
+        display: none;
+
+    }
+}

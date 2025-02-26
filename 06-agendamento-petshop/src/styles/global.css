@@ -60,4 +60,14 @@ body {
 
 main {
   position: relative;
+  min-height: 65rem;
+  background-color: var(--bg-primary);
+  width: 100%;
+  margin-inline: auto;
+}
+
+@media (width >=80em) {
+  main {
+    min-height: 40rem;
+  }
 }

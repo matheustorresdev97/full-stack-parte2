@@ -14,7 +14,7 @@
   </head>
   <body>
     <main>
-      <header class="container blur">
+      <header class="container">
         <div>
           <h1 class="title">Your schedule</h1>
           <span class="pg-md"
@@ -28,7 +28,7 @@
           <div><input type="date" name="date" id="date" /></div>
         </div>
       </header>
-      <section class="morning container blur">
+      <section class="morning container">
         <header>
           <div>
             <img src="/Morning.svg" alt="morning period icon" />
@@ -57,7 +57,7 @@
           </li>
         </ul>
       </section>
-      <section class="afternoon container blur">
+      <section class="afternoon container">
         <header>
           <div>
             <img src="/Afternoon.svg" alt="afternoon period icon" />
@@ -67,7 +67,7 @@
         </header>
         <ul></ul>
       </section>
-      <section class="evening container blur">
+      <section class="evening container">
         <header>
           <div>
             <img src="/Evening.svg" alt="evening period icon" />
@@ -78,9 +78,9 @@
         <ul></ul>
       </section>
       <img src="/Logo.svg" alt="Mundo Pet logo" class="logo" />
-      <button class="button-scheduler label-lg hidden">NEW APPOINTMENT</button>
+      <button class="button-new-schedule label-lg">NEW APPOINTMENT</button>
 
-      <div class="transparent overlay">
+      <div class="transparent overlay hidden">
         <aside>
           <span class="title">Schedule a service</span>
           <span class="pg-md"
@@ -97,6 +97,7 @@
                 name="clientName"
                 id="clientName"
                 placeholder="Salsicha"
+                required
               />
             </div>
 
@@ -110,6 +111,7 @@
                 name="petName"
                 id="petName"
                 placeholder="Scooby-doo"
+                required
               />
             </div>
 
@@ -122,10 +124,44 @@
                 type="text"
                 name="clientPhone"
                 id="clientPhone"
-                placeholder="+XX (XX) XXXXX - XXXX"
+                placeholder="+XX (XX) XXXXX-XXXX"
               />
             </div>
+
+            <label for="serviceInfo" class="label-md content-primary"
+              >Service info</label
+            >
+            <div class="input">
+              <textarea
+                name="serviceInfo"
+                id="serviceInfo"
+                rows="3"
+                placeholder="Banho e Tosa"
+              ></textarea>
+            </div>
+
+            <div class="input-date">
+              <label for="date-form" class="label-md content-primary"
+                >Date</label
+              >
+              <div class="input">
+                <img src="/Calendar.svg" alt="calendar icon" />
+                <span id="text-date-form">Oct 07, 2024</span>
+                <div><input type="date" name="date-form" id="date-form" /></div>
+              </div>
+
+              <label for="time" class="label-md content-primary">Time</label>
+              <div class="input">
+                <img src="/Clock.svg" alt="Clock icon" />
+                <span id="text-time-form">23:16</span>
+                <div><input type="time" name="time" id="time" /></div>
+              </div>
+            </div>
           </form>
+          <button type="submit" class="scheduler-button label-lg">
+            SCHEDULE
+          </button>
+          <div id="remove" class="mobile-only"></div>
         </aside>
       </div>
     </main>
