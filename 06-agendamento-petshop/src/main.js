@@ -3,9 +3,11 @@
 import "./styles/index.css";
 import "./libs/day.js";
 
-import "./modules/header-date.js";
-import "./modules/phone-number.js";
-import "./modules/button-new-schedule.js";
-import "./modules/cancel-scheduling.js";
-import "./modules/date-time.js";
-import "./modules/getting-data.js";
+import "./modules/load/header-date.js";
+import "./modules/form/phone-number.js";
+import "./modules/buttons/button-new-schedule.js";
+import "./modules/buttons/cancel-scheduling.js";
+import "./modules/form/date-time.js";
+import "./modules/form/getting-data.js";
+import "./modules/load/page-load.js";
+import "./services/schedule-click.js";

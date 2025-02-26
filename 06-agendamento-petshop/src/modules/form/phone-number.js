@@ -3,6 +3,7 @@ let phoneNumber = "";
 const listOfNumbers = " 0123456789";
 const listOfCaracteres = "+()-"
 
+// Everytime the phoneInput got focused, the script automatically puts + if there isnt one
 phoneInput.addEventListener("focus",() => {
   if (!phoneInput.value.includes("+"))
     phoneInput.value = "+";
