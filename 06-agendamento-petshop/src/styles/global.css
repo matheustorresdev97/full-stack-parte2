@@ -57,3 +57,7 @@ body {
   color: #98959d;
   color: var(--content-secondary);
 }
+
+main {
+  position: relative;
+}

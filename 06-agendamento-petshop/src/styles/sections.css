@@ -34,7 +34,7 @@ section+section {
     margin-top: .75rem;
 }
 
-section:last-child {
+section:nth-child(4) {
     margin-bottom: 4rem;
 }
 

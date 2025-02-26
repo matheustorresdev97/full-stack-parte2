@@ -14,7 +14,7 @@
   </head>
   <body>
     <main>
-      <header class="container">
+      <header class="container blur">
         <div>
           <h1 class="title">Your schedule</h1>
           <span class="pg-md"
@@ -28,7 +28,7 @@
           <div><input type="date" name="date" id="date" /></div>
         </div>
       </header>
-      <section class="morning container">
+      <section class="morning container blur">
         <header>
           <div>
             <img src="/Morning.svg" alt="morning period icon" />
@@ -57,7 +57,7 @@
           </li>
         </ul>
       </section>
-      <section class="afternoon container">
+      <section class="afternoon container blur">
         <header>
           <div>
             <img src="/Afternoon.svg" alt="afternoon period icon" />
@@ -67,7 +67,7 @@
         </header>
         <ul></ul>
       </section>
-      <section class="evening container">
+      <section class="evening container blur">
         <header>
           <div>
             <img src="/Evening.svg" alt="evening period icon" />
@@ -77,6 +77,8 @@
         </header>
         <ul></ul>
       </section>
+      <img src="/Logo.svg" alt="Mundo Pet logo" class="logo" />
+      <button class="button-scheduler label-lg hidden">NEW APPOINTMENT</button>
     </main>
     <script type="module" src="src/main.js"></script>
   </body>
