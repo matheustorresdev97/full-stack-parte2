@@ -1,4 +1,5 @@
 "use strict"
 
 import "./libs/day.js"
-import dayjs from "dayjs"
+
+import "./modules/form/submit.js"
