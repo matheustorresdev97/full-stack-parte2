@@ -2,7 +2,6 @@ import dayjs from "dayjs";
 import { openingHours } from "../../utils/opening-hours";
 import { hoursClick } from "./hours-click";
 
-console.log(openingHours)
 
 //pegando a ul de hours
 const hours = document.getElementById("hours")
