@@ -1,0 +1,51 @@
+header {
+    display: grid;
+    gap: calc(12rem/16);
+    padding-top: calc(70rem/16);
+
+    & div:has(>input) {
+        display: block;
+        position: relative;
+
+        & input {
+            opacity: 0;
+            position: absolute;
+            inset: 0;
+        }
+
+        background-image: url(../assets/Icon.svg);
+        object-fit: contain;
+        width: calc(20rem/16);
+        height: calc(20rem/16);
+    }
+
+    & img {
+        display: block;
+        width: calc(20rem/16);
+        height: calc(20rem/16);
+    }
+
+    & div:nth-child(2) {
+        height: 1.5rem;
+        width: calc(140rem/16);
+        display: flex;
+        gap: .5rem;
+        vertical-align: center;
+        padding: calc(12rem/16);
+        border: solid 1px var(--border-primary);
+        border-radius: .5rem;
+
+        & span {
+            display: block;
+            width: 6rem;
+            height: 1.5rem;
+        }
+    }
+}
+
+@media (width >=80em) {
+    & header {
+        grid-template-columns: calc(527rem/16) calc(172rem/16);
+        align-items: center;
+    }
+}

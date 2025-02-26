@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+  --bg-primary: #14151d;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #23242c;
+  --bg-brand: #9282fa;
+  --bg-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+  --font-family: "Inter", system-ui, sans-serif;
+  --ff-title: "Inter tight", system-ui, sans-serif;
+  --fw-base: 400;
+  --fw-md: 500;
+  --fw-bold: 700;
+
+  --title: var(--fw-bold) 1.5rem/2rem var(--ff-title);
+  --pg-md: var(--fw-md) calc(14rem/16)/1.5rem var(--font-family);
+  --pg-sm: var(--fw-md) calc(12rem/16)/1rem var(--font-family);
+  --label-lg: var(--fw-bold) 1rem/1.5rem var(--font-family);
+  --label-md: var(--fw-bold) calc(14rem/16)/1.5rem var(--font-family);
+  --label-sm: var(--fw-bold) calc(12rem/16)/1rem var(--font-family);
+  --link: var(--fw-md) calc(12rem/16)/1rem var(--font-family);
+
+}
+
+body {
+  font-weight: var(--fw-base);
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #98959d;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}

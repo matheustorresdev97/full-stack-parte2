@@ -1,0 +1,9 @@
+.title {
+    font: var(--title);
+    color: #f5f4f5;
+}
+
+.pg-md {
+    font: var(--pg-md);
+    color: #98959d;
+}

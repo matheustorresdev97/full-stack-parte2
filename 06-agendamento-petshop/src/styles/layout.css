@@ -1,0 +1,16 @@
+main {
+    background-color: var(--bg-primary);
+    width: 100%;
+    margin-inline: auto;
+    min-height: 400px;
+}
+
+.container {
+    padding-inline: calc(20rem/16);
+}
+
+@media (width >=80em) {
+    & .container {
+        padding-inline: calc(328rem/16);
+    }
+}
