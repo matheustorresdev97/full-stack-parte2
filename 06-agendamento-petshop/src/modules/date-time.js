@@ -8,6 +8,8 @@ export function formInputRefresher() {
   dateTimeSpan[0].textContent = dayjs().format("MMM DD, YYYY");
   dateTimeSpan[1].textContent = dayjs().format("HH:mm");
   dateInput.min = dayjs().format("YYYY-MM-DD");
+  dateInput.value = dayjs().format("YYYY-MM-DD");
+  timeInput.value = dayjs().format("HH:mm");
 }
 
 dateInput.onchange = () => {

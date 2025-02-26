@@ -8,3 +8,4 @@ import "./modules/phone-number.js";
 import "./modules/button-new-schedule.js";
 import "./modules/cancel-scheduling.js";
 import "./modules/date-time.js";
+import "./modules/getting-data.js";
