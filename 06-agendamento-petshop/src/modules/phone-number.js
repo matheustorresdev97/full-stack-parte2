@@ -1,33 +1,42 @@
 const phoneInput = document.getElementById("clientPhone");
 let phoneNumber = "";
-const listOfNumbers = "0123456789";
+const listOfNumbers = " 0123456789";
+const listOfCaracteres = "+()-"
 
-phoneInput.addEventListener("focus", () => {
-  if (!phoneInput.value.includes("+")) phoneInput.value = "+";
-  if (phoneNumber) phoneInput.value = phoneNumber;
-});
+phoneInput.addEventListener("focus",() => {
+  if (!phoneInput.value.includes("+"))
+    phoneInput.value = "+";
+})
 
-phoneNumber = phoneInput.addEventListener("keydown", (event) => {
-  if (!(event.key === "Tab"))
-    event.preventDefault();
-  if (event.key === "Backspace" || event.key === "Delete") {
-    phoneNumber += key;
+phoneInput.addEventListener("input", () => {
+  if (!phoneInput.value.includes("+"))
+    phoneInput.value = "+";
+
+  if (!listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 1])) {
+    if (listOfCaracteres.includes(phoneInput.value[phoneInput.value.length-1])){
+      if (Verify())
+        phoneInput.value = phoneInput.value.slice(0,-1)
+    }
+    else
+      phoneInput.value = phoneInput.value.slice(0,-1)
   }
-  validInput(event.key);
-  if (phoneNumber) phoneInput.value = phoneNumber;
-});
-
-function validInput(key) {
-  if (
-    key === " " &&
-    listOfNumbers.includes(phoneNumber[phoneNumber.length - 1])
-  ) {
-    if (!phoneNumber.includes("(")) phoneNumber += " (";
-    else if (!phoneNumber.includes(")")) phoneNumber += ") ";
-    else if (phoneNumber.includes(")")) phoneNumber += "-";
-  } else if (listOfNumbers.includes(key)) {
-    if (!phoneNumber) phoneNumber = "+";
-    phoneNumber += key;
-    console.log(phoneNumber);
+  function Verify() {
+    let contain = false
+    if (phoneInput.value.slice(0,-1).includes(phoneInput.value[phoneInput.value.length-1]))
+      contain = true
+    return contain
   }
-}
+
+  if (phoneInput.value[phoneInput.value.length - 1] === " ") {
+    if (!phoneInput.value.includes("("))
+      phoneInput.value += "("
+    else if (!phoneInput.value.includes(")")) {
+      phoneInput.value = phoneInput.value.slice(0,-1)
+      phoneInput.value += ") "
+    }
+    else if (!phoneInput.value.includes("-") && listOfNumbers.includes(phoneInput.value[phoneInput.value.length - 2])) {
+      phoneInput.value = phoneInput.value.slice(0,-1)
+      phoneInput.value += "-"
+    }
+  }
+})
