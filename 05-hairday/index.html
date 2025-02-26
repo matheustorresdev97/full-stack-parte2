@@ -14,7 +14,7 @@
 
   </head>
   <body>
-    <div id="app">
+    <div class="container">
       <img src="/logo.svg" alt="Logo" class="logo" />
 
       <form class="form">
@@ -34,61 +34,61 @@
 
         <span class="label">Horários</span>
         <ul id="hours" class="hours" aria-label="Horários disponíveis de manhã">
+        </ul>
+
+        <label for="client" class="label">Cliente</label>
+        <div class="input">
+          <i><img src="/person.svg" alt="Calendário" /></i>
+          <input
+            type="text"
+            id="client"
+            name="client"
+            placeholder="Nome do cliente"
+            required
+          />
+        </div>
+
+        <button type="submit" class="button">Agendar</button>
       </form>
-    </ul>
 
-    <label for="client" class="label">Cliente</label>
-    <div class="input">
-      <i><img src="/person.svg" alt="Calendário" /></i>
-      <input
-        type="text"
-        id="client"
-        name="client"
-        placeholder="Nome do cliente"
-        required
-      />
+      <aside class="schedule">
+        <header>
+          <h1>Agendamentos</h1>
+          <p>Visualize os agendamentos de acordo com o dia selecionado</p>
+        </header>
+
+        <section class="schedule-period">
+          <header>
+            <img src="/morning.svg" alt="Manhã" />
+            <strong>Manhã</strong>
+            <span>09h-12h</span>
+          </header>
+          <ul id="period-morning" class="period">
+          </ul>
+        </section>
+
+        <section class="schedule-period">
+          <header>
+            <img src="/afternoon.svg" alt="Tarde" />
+            <strong>Tarde</strong>
+            <span>13h-18h</span>
+          </header>
+          <ul id="period-afternoon" class="period">
+          </ul>
+        </section>
+
+        <section class="schedule-period">
+          <header>
+            <img src="/night.svg" alt="noite" />
+            <strong>Noite</strong>
+            <span>19h-21h</span>
+          </header>
+          <ul id="period-night" class="period">
+          </ul>
+        </section>
+      </aside>
     </div>
 
-    <button type="submit" class="button">Agendar</button>
-  </form>
-
-  <aside class="schedule">
-    <header>
-      <h1>Agendamentos</h1>
-      <p>Visualize os agendamentos de acordo com o dia selecionado</p>
-    </header>
-
-    <section class="schedule-period">
-      <header>
-        <img src="/morning.svg" alt="Manhã" />
-        <strong>Manhã</strong>
-        <span>09h-12h</span>
-      </header>
-      <ul id="period-morning" class="period">
-      </ul>
-    </section>
-
-    <section class="schedule-period">
-      <header>
-        <img src="/afternoon.svg" alt="Tarde" />
-        <strong>Tarde</strong>
-        <span>13h-18h</span>
-      </header>
-      <ul id="period-afternoon" class="period">
-      </ul>
-    </section>
-
-    <section class="schedule-period">
-      <header>
-        <img src="/night.svg" alt="noite" />
-        <strong>Noite</strong>
-        <span>19h-21h</span>
-      </header>
-      <ul id="period-night" class="period">
-      </ul>
-    </section>
-  </aside>
-    </div>
-    <script type="module" src="/src/main.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>
