@@ -1,6 +1,7 @@
 "use strict";
 
 import "./styles/index.css";
+import "./libs/day.js";
 
 import "./modules/header-date.js";
 import "./modules/phone-number.js";

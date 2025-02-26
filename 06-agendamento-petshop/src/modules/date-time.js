@@ -1,3 +1,5 @@
+import dayjs from "dayjs"
+
 const dateTimeSpan = document.querySelectorAll(".input-date span");
 const dateInput = document.getElementById("date-form");
 const timeInput = document.getElementById("time");
