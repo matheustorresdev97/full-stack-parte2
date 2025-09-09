@@ -52,3 +52,16 @@ inputItem.addEventListener("keypress", (e) => {
     addItem();
   }
 });
+
+itemList.addEventListener("click", (e) => {
+  if (e.target && e.target.classList.contains("delete-btn")) {
+    const listItem = e.target.closest("li");
+    listItem.remove();
+
+    alert.style.display = "flex";
+  }
+});
+
+closeAlertButton.addEventListener("click", () => {
+  alert.style.display = "none";
+});
