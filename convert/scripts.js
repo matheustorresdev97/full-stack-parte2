@@ -5,6 +5,7 @@ const GBP = 6.08;
 const form = document.querySelector("form");
 const amount = document.getElementById("amount");
 const currency = document.getElementById("currency");
+const footer = document.querySelector("main footer");
 
 amount.addEventListener("input", () => {
   const hasCharactersRegex = /\D+/g;
@@ -28,5 +29,12 @@ form.onsubmit = (event) => {
 };
 
 function convertCurrency(amount, price, symbol) {
-  console.log(amount, price, symbol);
+  try {
+    footer.classList.add("show-result");
+  } catch {
+    footer.classList.remove("show-result");
+
+    console.log(error);
+    alert("Não foi possível converter. Tente novamente mais tarde.");
+  }
 }
