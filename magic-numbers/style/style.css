@@ -22,7 +22,7 @@
       #e9a9b3 32.15%,
       #d586e0 65.79%,
       #91a1fa 84.58%);
-  --gradient-background: linear-gradient(#d586e0 0%, #91a1fa 98.93%);
+  --gradient-background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(to right, #c7c9cc 0%, #3d3d3d 100%);
 }
 
@@ -201,4 +201,61 @@ body {
   text-align: center;
   border-radius: 10px;
   padding: 1rem;
+}
+
+.switch__container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.9rem;
+  height: 1.8rem;
+}
+
+.switch .checkbox__input {
+  visibility: hidden;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--content-tertiary);
+  transition: 0.3s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 5px;
+  background-color: var(--content-primary);
+  transition: 0.3s;
+}
+
+.checkbox__input:checked+.slider {
+  background-image: var(--gradient-background);
+  transition: 0.4s all ease-in;
+}
+
+.checkbox__input:checked+.slider::before {
+  transform: translateX(15px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
 }
