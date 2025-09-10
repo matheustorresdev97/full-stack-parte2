@@ -25,3 +25,10 @@
     --gradient-background: linear-gradient(#d586e0 0%, #91a1fa 98.93%);
     --gradient-content: linear-gradient(#c7c9cc 0%, #3d3d3d 100%);
 }
+
+body {
+    background-image: url("../assets/background.png");
+    background-size: 100%;
+    background-color: var(--background-primary);
+    color: var(--content-primary);
+}
