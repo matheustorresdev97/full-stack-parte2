@@ -51,7 +51,7 @@ body {
     margin-inline: 5%;
 }
 
-.container-logo {
+.logo {
     margin-bottom: 5rem;
     align-self: flex-start;
     margin-inline: 4%;
@@ -62,7 +62,7 @@ body {
     gap: 0.4rem;
 }
 
-.text-logo {
+.logo__text {
     font-family: "Sora";
     font-weight: bolder;
     font-size: 1.4rem;

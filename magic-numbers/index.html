@@ -15,32 +15,30 @@
 </head>
 
 <body>
-  <div class="container-logo">
-    <img src="./assets/numbers logo.png" class="image-logo" alt="purple circle logo" />
-    <span class="text-logo"> Numbers </span>
+  <div class="logo">
+    <img src="./assets/numbers logo.png" class="logo__image" alt="purple circle logo" />
+    <span class="logo__text"> Numbers </span>
   </div>
-  <main class="container-main">
-    <div class="container-content">
-      <div class="container-header">
-        <p class="">Online - gratuito</p>
-        <h1 class="main-title">Sorteador de números</h1>
+  <main class="container">
+    <div class="content">
+      <div class="header">
+        <p class="header__text">Online - gratuito</p>
+        <h1 class="header__title">Sorteador de números</h1>
       </div>
-      <p class="about-paragraph">
-        <span class="title-about-paragraph">
-          <i></i>
-          Como funciona o sorteador de números?
-        </span>
-        O sorteador utiliza um algorítmo de geração aleatória para criar
-        números dentro do intervalo especificado pelo usuário
-      </p>
-      <p class="about-paragraph">
-        <span class="title-about-paragraph">
-          <i></i>
-          Posso escolher o intervalo dos números?
-        </span>
-        Sim, você pode definir os valores mínimo e máximo para o intervalo dos
-        números sorteados
-      </p>
+      <div class="questions">
+        <div class="questions__items">
+          <span> <i></i> como funciona o sorteador de números? </span>
+          O sorteador utiliza um algorítimo de geração aleatória para criar
+          números dentro do intervalo especificado pelo usuário
+        </div>
+        <div class="questions__items">
+          <span> <i></i> Posso escolher o intervalo dos números? </span>
+          <p>
+            Sim, você pode definir os valores mínimo e máximo para o intervalo
+            dos números sorteados.
+          </p>
+        </div>
+      </div>
     </div>
     <div class="sort-container">
       <p class="sort-paragraph">
@@ -70,7 +68,6 @@
       </form>
     </div>
   </main>
-
   <script src="script.js"></script>
 </body>
 
