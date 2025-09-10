@@ -8,7 +8,7 @@ const expensesTotal = document.querySelector("aside header h2")
 const expenseQuantity = document.querySelector("aside header p span")
 
 amount.oninput = () => {
-    let value = amount.value.replace(/\D/g, "")
+    let value = itemAmount.textContent.replace(/[^\d,]/g, "").replace(",", ".")
 
     value = Number(value) / 100
 
@@ -102,7 +102,14 @@ function updateTotals() {
             total += Number(value)
         }
 
-        expensesTotal.textContent = total
+        const symbolBRL = document.createElement("small")
+        symbolBRL.textContent = "R$"
+
+        total = formatCurrencyBRL(total).toUpperCase().replace("R$", "")
+
+        expensesTotal.innerHTML = ""
+
+        expensesTotal.append(symbolBRL, total)
 
     } catch (error) {
         alert("Não foi possível atualizar os totais.")
