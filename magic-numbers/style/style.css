@@ -32,7 +32,6 @@ body {
     background-color: var(--background-primary);
     color: var(--content-primary);
     display: flex;
-    align-items: center;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
@@ -56,4 +55,17 @@ body {
     margin-bottom: 5rem;
     align-self: flex-start;
     margin-inline: 4%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.text-logo {
+    font-family: "Sora";
+    font-weight: bolder;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: -4%;
 }
