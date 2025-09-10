@@ -17,12 +17,14 @@
   --background-brand: #c58de7;
   --background-gray: #3d3d3d;
 
-  --gradient-border: linear-gradient(to right,
-      #77c0af 0%,
-      #d1dc97 14.84%,
-      #e9a9b3 32.15%,
-      #d586e0 65.79%,
-      #91a1fa 84.58%);
+  --gradient-border: linear-gradient(
+    to right,
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
   --gradient-background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(to right, #c7c9cc 0%, #3d3d3d 100%);
 }
@@ -86,6 +88,7 @@ body {
 .content,
 .sort {
   width: 50%;
+  height: 100%;
 }
 
 .logo {
@@ -120,7 +123,8 @@ body {
 }
 
 .question__icon {
-  filter: brightness(0) saturate(100%) invert(56%) sepia(100%) saturate(197%) hue-rotate(233deg) brightness(95%) contrast(91%);
+  filter: brightness(0) saturate(100%) invert(56%) sepia(100%) saturate(197%)
+    hue-rotate(233deg) brightness(95%) contrast(91%);
 }
 
 .question__title {
@@ -207,7 +211,7 @@ body {
 .number__input:hover {
   background: linear-gradient(#24222e, #24222e) padding-box,
     var(--gradient-border) border-box;
-  border: 2px solid transparent;
+  border: 1px solid transparent;
   transition: 0.2s;
 }
 
@@ -257,12 +261,12 @@ body {
   transition: 0.3s;
 }
 
-.checkbox__input:checked+.slider {
+.checkbox__input:checked + .slider {
   background-image: var(--gradient-background);
   transition: 0.4s all ease-in;
 }
 
-.checkbox__input:checked+.slider::before {
+.checkbox__input:checked + .slider::before {
   transform: translateX(15px);
 }
 
@@ -298,4 +302,44 @@ body {
     var(--gradient-border) border-box;
   border: 2px solid transparent;
   transition: 0.2s;
+}
+
+.sort__result {
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 50%;
+}
+
+.sort__title {
+  font-family: "Roboto Flex", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--content-primary);
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.sort__subtitle {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--content-secondary);
+  margin-bottom: 2rem;
+}
+
+.result__container {
+  font-family: "Roboto Mono", monospace;
+  color: var(--content-brand);
+  font-weight: bold;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  gap: 1rem;
+  margin-bottom: 1.4rem;
 }

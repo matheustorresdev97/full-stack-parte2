@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="shortcut icon" href="assets/numbers logo.png" type="image/x-icon">
     <title>Sorteador de número</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -67,7 +69,7 @@
         </p>
         <form class="sort__form">
           <div class="sort__container">
-            <label for="number__amount" class="number__label number__amount">
+            <label for="number__amount" class="number__label">
               Números
               <input
                 type="text"
@@ -80,7 +82,7 @@
             </label>
             <label
               for="number__min number__label"
-              class="number__label number__min"
+              class="number__label"
             >
               DE
               <input
@@ -94,16 +96,19 @@
             </label>
             <label
               for="number__max number__label"
-              class="number__label number__max"
+              class="number__label"
             >
               ATÉ
-              <input
+              <div class="form-input__border">
+                <input
                 type="text"
                 name="number__max"
                 class="number__max number__input"
                 value="100"
                 minlength="1"
+                maxlength="3"
               />
+              </div>
             </label>
           </div>
           <div class="switch__container">
@@ -113,13 +118,22 @@
             </label>
             Não Repetir números.
           </div>
-        <button type="submit" class="form__submit">
+        <button type="submit" class="form__submit sort__submit">
           SORTEAR
           <img src="./assets/right-arrow.svg" alt="seta para a direita" />
         </button>
       </div>
+      <div class="sort__result">
+        <h2 class="sort__title">Resultado do sorteio</h2>
+        <p class="sort__subtitle">1º Resultado</p>
+        <div class="result__container">
+        </div>
+        <button type="submit" class="form__submit result__submit">
+          SORTEAR NOVAMENTE
+          <img src="./assets/rewind.svg" alt="icone de repetição" />
+        </button>
+      </div>
     </main>
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>

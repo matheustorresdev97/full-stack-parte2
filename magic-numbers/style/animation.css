@@ -1,0 +1,29 @@
+.sorted__number {
+    animation: boxSpin 2s ease-out;
+    padding: 0.8rem;
+    border-radius: 20px;
+}
+
+
+@keyframes boxSpin {
+    0% {
+        color: transparent;
+        background-color: var(--background-brand);
+    }
+
+    50% {
+        color: transparent;
+        background-color: var(--background-brand);
+    }
+
+    80% {
+        color: var(--color-inverse);
+        transform: rotate(720deg);
+    }
+
+    100% {
+        background-color: transparent;
+        color: var(--content-brand);
+        transform: rotate(720deg);
+    }
+}
