@@ -28,7 +28,32 @@
 
 body {
     background-image: url("../assets/background.png");
-    background-size: 100%;
+    background-size: cover;
     background-color: var(--background-primary);
     color: var(--content-primary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.sort-paragraph,
+.about-paragraph {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-inline: 5%;
+}
+
+.container-logo {
+    margin-bottom: 5rem;
+    align-self: flex-start;
+    margin-inline: 4%;
 }
