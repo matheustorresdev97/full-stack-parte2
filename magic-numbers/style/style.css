@@ -37,8 +37,8 @@ body {
   height: 100vh;
 }
 
-.sort__paragraph,
-.about-paragraph {
+.sort__info,
+.question__paragraph {
   font-family: "Roboto Flex", sans-serif;
 }
 
@@ -47,7 +47,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-inline: 5rem;
+  margin-inline: 6rem;
   gap: 2rem;
 }
 
@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 .header__text {
@@ -75,7 +76,7 @@ body {
 
 .header__title {
   font-family: "Sora";
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 130%;
   text-transform: uppercase;
   font-weight: 800;
@@ -88,7 +89,7 @@ body {
 }
 
 .logo {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   align-self: flex-start;
   margin-inline: 4%;
   margin-top: 5rem;
@@ -104,4 +105,36 @@ body {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: -4%;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.questions__items {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.question__icon {
+  filter: brightness(0) saturate(100%) invert(56%) sepia(100%) saturate(197%) hue-rotate(233deg) brightness(95%) contrast(91%);
+}
+
+.question__title {
+  margin-top: 0.1rem;
+}
+
+.question__title--emphasis {
+  color: var(--content-brand);
+}
+
+.question__paragraph {
+  display: flex;
+  color: var(--content-secondary);
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1.5rem;
 }

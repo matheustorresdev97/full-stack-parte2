@@ -30,13 +30,29 @@
         </div>
         <div class="questions">
           <div class="questions__items">
-            <span> <i></i> como funciona o sorteador de números? </span>
-            O sorteador utiliza um algorítimo de geração aleatória para criar
-            números dentro do intervalo especificado pelo usuário
+            <img
+              src="./assets/user-question.svg"
+              alt="boneco de usuário com balão ao lado da cabeça"
+              class="question__icon"
+            />
+            <p class="question__paragraph">
+              <spam class="question__title question__title--emphasis">
+                Como funciona o sorteador de números?
+              </spam>
+              O sorteador utiliza um algorítmo de geração aleatória para criar
+              números dentro do intervalo especificado pelo usuário.
+            </p>
           </div>
           <div class="questions__items">
-            <span> <i></i> Posso escolher o intervalo dos números? </span>
-            <p>
+            <img
+              src="./assets/user-question.svg"
+              alt="boneco de usuário com balão ao lado da cabeça"
+              class="question__icon"
+            />
+            <p class="question__paragraph">
+              <spam class="question__title question__title--emphasis">
+                Posso escolher o intervalo dos números?
+              </spam>
               Sim, você pode definir os valores mínimo e máximo para o intervalo
               dos números sorteados.
             </p>
@@ -45,32 +61,36 @@
       </div>
       <div class="sort">
         <p class="sort__info">
-          <em>QUERO SORTEAR:</em>
+          <span class="sort__info-emphasis">Quero sortear:</span>
           defina o intervalo e a quantidade de números, clique em "Sortear" e
           veja os resultados na tela. É rápido e fácil!
         </p>
         <form class="sort__form">
           <label for="number__amount">
             Númeoros
-            <input type="number" name="number__amount" />
+            <input type="number" name="number__amount" class="number__amount" />
           </label>
           <label for="number__min">
             DE
-            <input type="number" name="number__min" />
+            <input type="number" name="number__min" class="number__min" />
           </label>
           <label for="number__max">
-           ATÉ 
-            <input type="number" name="number__max" />
+            ATÉ
+            <input type="number" name="number__max" class="number__max" />
           </label>
           <label for="switch">
-            <input type="checkbox" /> 
+            <input type="checkbox" name="switch" />
             <span class="slider"></span>
           </label>
-            Não repetir número
-          <button type="submit" class="form__submit">SORTEAR <i>seta</i></button>
+          Não repetir número
+          <button type="submit" class="form__submit">
+            SORTEAR
+            <img src="./assets/right-arrow.svg" alt="seta para a direita" />
+          </button>
         </form>
       </div>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
