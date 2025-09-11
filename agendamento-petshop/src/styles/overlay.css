@@ -42,10 +42,6 @@
   }
 }
 
-.hidden {
-  display: none;
-}
-
 #close-form {
   position: absolute;
   width: 2.25rem;

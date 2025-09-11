@@ -45,6 +45,11 @@
 
     --atual-width: 24.375rem;
 }
+
+.hidden {
+  display: none !important;
+}
+
 .blur {
   position: fixed;
   top: 0;
