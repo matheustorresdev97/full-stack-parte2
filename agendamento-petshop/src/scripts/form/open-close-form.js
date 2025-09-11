@@ -12,7 +12,11 @@ newSchedule.addEventListener("click", () => {
 })
 
 closeForm.addEventListener("click", () => {
+    closeOverlay()
+})
+
+export function closeOverlay() {
     overlay.classList.add("hidden");
     body.classList.remove("no-scroll");
     blurDiv.classList.add("hidden");
-})
+}
