@@ -15,6 +15,10 @@ Aqui, foram aplicados conceitos fundamentais de manipulação do DOM, eventos, m
 
 ---
 
+- 💸 [Refund](./refund/README.md) — Controle de despesas, com lista dinâmica e cálculo de totais.  
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 - **HTML**
 - **CSS**
