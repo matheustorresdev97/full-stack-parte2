@@ -23,6 +23,14 @@ Aqui, foram aplicados conceitos fundamentais de manipulação do DOM, eventos, m
 
 ---
 
+- 💇‍♂️ [Hairday](./hairday/README.md) — Sistema de agendamento de cortes de cabelo (Webpack + JSON Server).  
+
+---
+
+- 🐶 [Agendamento Petshop](./agendamento-petshop/README.md) — Sistema de agendamento para petshop (Webpack + JSON Server).  
+
+---
+
 
 ## 🛠️ Tecnologias Utilizadas
 - **HTML**
