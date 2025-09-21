@@ -11,6 +11,10 @@ Aqui, foram aplicados conceitos fundamentais de manipulação do DOM, eventos, m
 
 ---
 
+- 💱 [Convert](./convert/README.md) — Conversor de moedas (USD, EUR, GBP → BRL). 
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 - **HTML**
 - **CSS**
