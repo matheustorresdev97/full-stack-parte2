@@ -19,6 +19,11 @@ Aqui, foram aplicados conceitos fundamentais de manipulação do DOM, eventos, m
 
 ---
 
+- 🔢 [Magic Numbers](./magic-numbers/README.md) — Sorteador de números com histórico de resultados.  
+
+---
+
+
 ## 🛠️ Tecnologias Utilizadas
 - **HTML**
 - **CSS**
