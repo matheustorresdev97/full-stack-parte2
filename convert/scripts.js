@@ -1,6 +1,6 @@
-const USD = 4.87;
-const EUR = 5.32;
-const GBP = 6.08;
+const USD = 5.33;
+const EUR = 6.25;
+const GBP = 7.26;
 
 const form = document.querySelector("form");
 const amount = document.getElementById("amount");
